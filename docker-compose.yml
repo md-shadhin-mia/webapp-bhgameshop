@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    image: php:8.0-apache
+    ports:
+        - 8000:8000
+    volumes:
+        - ./:/var/www/html
+        - ./config.apache.conf:/etc/apache2/sites-available/config.apache.conf
