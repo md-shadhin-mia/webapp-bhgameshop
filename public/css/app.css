@@ -10002,3 +10002,76 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.sidebar {
+  min-width: 15rem;
+  min-height: 100vh;
+  max-height: 100vh;
+  max-width: 15rem;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+.sidebar .sidebar-content {
+  padding-top: 4rem;
+}
+.sidebar .sidebar-content .menu-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--dark);
+}
+.sidebar .sidebar-content .menu-link:hover {
+  color: var(--primary);
+}
+.sidebar .sidebar-content .menu-link.active {
+  background: var(--primary);
+  color: var(--light);
+}
+
+.main {
+  padding-left: 15rem;
+}
+
+.bh-navbar {
+  max-height: 4rem;
+}
+
+@-webkit-keyframes devview {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes devview {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.devpage {
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background-color: #2e3835;
+  -webkit-animation: devview 0.5s ease-in;
+          animation: devview 0.5s ease-in;
+  z-index: 1024;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/*# sourceMappingURL=app.css.map*/
